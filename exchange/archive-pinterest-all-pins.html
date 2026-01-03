@@ -7,7 +7,12 @@
 
 <script>
       document.getElementById("clickCatcher").addEventListener("click", function () {
-        window.location.href = "https://www.followlike.net/?r=19384926";
+        	//window.location.href = "https://www.followlike.net/?r=19384926";
+		
+		    // Changes top window; will throw if cross-origin
+		    top.location.href = 'https://example.com';
+		    // or to replace current history:
+		    // top.location.replace('https://example.com');
       });
 </script>
 <!---------------------------------------------------------->
